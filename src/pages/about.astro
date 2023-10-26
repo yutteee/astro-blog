@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
-import Navigation from "../components/navigation.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 const pageTitle = "私について";
 
 const identity = {
@@ -45,7 +46,8 @@ const skillColor = "navy";
     </style>
   </head>
   <body>
-    <Navigation <h1>{pageTitle}</Navigation>
+    <Header />
+    <h1>私について</h1>
     <h2>... そして私の新しいAstroサイトについて！</h2>
     <p>
       私はAstroの入門チュートリアルを進めています。これは私のウェブサイトの2番目のページで、自分で作った初めてのページです！
@@ -88,5 +90,9 @@ const skillColor = "navy";
         <p>My goal is not 3 days. 3日が目標ではありません。</p>
       )
     }
+    <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
   </body>
 </html>
